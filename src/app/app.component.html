@@ -1,0 +1,19 @@
+<button 
+  mat-button [matMenuTriggerFor]="menu" 
+  #menuTrigger="matMenuTrigger" 
+  (mouseenter)="openResourceMenu(); recheckIfInMenu = true" 
+  (mouseleave)="closeResourceMenu(); recheckIfInMenu = false"> Resources
+</button>
+
+<mat-menu #menu="matMenu" [overlapTrigger]="false">
+  <span 
+  (mouseenter)="recheckIfInMenu = true" 
+  (mouseleave)="closeResourceMenu(); recheckIfInMenu = false">
+    <button mat-menu-item>
+      Buyers
+    </button>
+    <button mat-menu-item>
+      Sellers
+    </button>
+  </span>
+</mat-menu>

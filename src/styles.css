@@ -1,0 +1,8 @@
+/* Add application styles & imports to this file! */
+.cdk-overlay-container{
+    top:67px;
+}
+.cdk-overlay-connected-position-bounding-box{
+    top:0 !important;
+    
+}
